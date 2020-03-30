@@ -1,0 +1,11 @@
+{
+    "type": "postgres",
+    "host": "db",
+    "port": 5432,
+    "username": "nafeo",
+    "password": "nafio",
+    "database": "ticktacktoe",
+    "synchronize": true,
+    "logging": false
+
+}

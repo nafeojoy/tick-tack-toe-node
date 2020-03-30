@@ -1,0 +1,4 @@
+{
+    "ENV": "development",
+    "PostGreConnectionString": "postgres://nafeo:nafio@localhost:5432/ticktacktoe"
+}

@@ -1,0 +1,43 @@
+General: 
+
+Request URL:https://sms.sslwireless.com/pushapi/dynamic/server.php
+Request Method:POST
+Status Code:200 OK
+Remote Address:103.26.138.138:80
+Referrer Policy:no-referrer-when-downgrade
+
+
+Response Headers
+view source
+Connection:close
+Content-Length:350
+Content-Type:text/html; charset=UTF-8
+Date:Wed, 15 Nov 2017 04:42:13 GMT
+Server:Apache/2.2.15 (CentOS)
+X-Powered-By:PHP/5.4.25
+
+Request Headers
+view source
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding:gzip, deflate
+Accept-Language:en-US,en;q=0.9,bn;q=0.8
+Cache-Control:max-age=0
+Connection:keep-alive
+Content-Length:133
+Content-Type:application/x-www-form-urlencoded
+Host:sms.sslwireless.com
+Origin:http://localhost:8000
+Referer:http://localhost:8000/
+Upgrade-Insecure-Requests:1
+User-Agent:Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36
+
+
+Form Data
+view source
+view URL encoded
+user:omicon2
+pass:123456
+sid:LECTURE_Omicon
+sms[0][0]:8801824589241
+sms[0][1]:test sms 5
+sms[0][2]:1234567891
