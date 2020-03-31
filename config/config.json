@@ -1,4 +1,4 @@
 {
     "ENV": "development",
-    "PostGreConnectionString": "postgres://nafeo:nafio@localhost:5432/ticktacktoe"
+    "PostGreConnectionString": "postgres://uqxiughy:fXeE2G80x02kXsSQDoBnoQxuJcAo784j@satao.db.elephantsql.com:5432/uqxiughy"
 }

@@ -3,7 +3,7 @@ import { PostGreConnectionString } from "./config/config.json";
 
 // Load Node environment variable configuration file
 import {
-  validateEnvVariables
+    validateEnvVariables
 } from './config/env.conf.js';
 
 // Set up appropriate environment variables if necessary
@@ -41,7 +41,6 @@ import compression from 'compression';
 
 
 import path from 'path';
-import consolidate from 'consolidate';
 import { Client, Pool } from 'pg';
 
 // # Configuration
@@ -67,9 +66,9 @@ let port = process.env.PORT || 4000;
 //passportConf(passport);
 
 if (process.env.NODE_ENV === 'development' ||
-  process.env.NODE_ENV === 'test')
-  // Log every request to the console
-  app.use(morgan('dev'));
+    process.env.NODE_ENV === 'test')
+// Log every request to the console
+    app.use(morgan('dev'));
 
 // Read cookies (needed for authentication)
 app.use(cookieParser());
@@ -91,15 +90,15 @@ app.use(methodOverride('X-HTTP-Method-Override'));
 
 // gzip compression
 app.use(compression({
-  filter: shouldCompress
+    filter: shouldCompress
 }));
 
 function shouldCompress(req, res) {
-  if (req.headers['x-no-compression']) {
-    return false
-  }
-  // fallback to standard filter function
-  return compression.filter(req, res);
+    if (req.headers['x-no-compression']) {
+        return false
+    }
+    // fallback to standard filter function
+    return compression.filter(req, res);
 }
 
 app.disable('etag');
@@ -107,9 +106,9 @@ app.disable('etag');
 
 // Session secret
 app.use(session({
-  secret: process.env.SESSION_SECRET,
-  resave: true,
-  saveUninitialized: true
+    secret: process.env.SESSION_SECRET,
+    resave: true,
+    saveUninitialized: true
 }));
 
 
@@ -118,7 +117,7 @@ var connectionString = PostGreConnectionString;
 
 // Connect to POSTGRES --------------------------
 const client = new Client({
-  connectionString: connectionString
+    connectionString: connectionString
 })
 
 client.connect();
@@ -153,6 +152,6 @@ console.log(`Wizardry is afoot on port ${port}`);
 
 // Expose app
 export {
-  app,
-  client
+    app,
+    client
 };

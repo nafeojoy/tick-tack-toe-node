@@ -72,4 +72,10 @@ export default (app, router, logger) => {
             })
 
         })
+
+    router.route("/test-games")
+        .get((req, res, next) => {
+            res.send('test')
+
+        })
 }
