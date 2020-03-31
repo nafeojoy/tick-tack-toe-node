@@ -9,3 +9,5 @@
 alternatively,
 
 you can pull from docker: `docker pull nafeo/ticktacktoe_backend`
+
+Note: ElephantSQL is being used
