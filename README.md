@@ -8,4 +8,4 @@
 
 alternatively,
 
-you can pull from docker: [docker pull nafeo/ticktacktoe_backend](url)
+you can pull from docker: `docker pull nafeo/ticktacktoe_backend`
